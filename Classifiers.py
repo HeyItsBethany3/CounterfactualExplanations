@@ -453,8 +453,8 @@ class GBM(FeatImportance):
 
 # Allows dictionary items to be accessed by object attributes
 class dictObject(object):
-    def __init__(self, d):
-        self.__dict__ = d
+    def __init__(self, obj):
+        self.__dict__ = obj
 
 
 # ------------------ Functions -----------------------------

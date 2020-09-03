@@ -6,7 +6,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import matplotlib.lines as mlines
-import seaborn as sns
 import os
 import csv
 from time import time
@@ -460,8 +459,8 @@ class GBM(FeatImportance):
 
 # Allows dictionary items to be accessed by object attributes
 class dictObject(object):
-    def __init__(self, d):
-        self.__dict__ = d
+    def __init__(self, obj):
+        self.__dict__ = obj
 
 
 # Simple method for generating counterfactual explanations
